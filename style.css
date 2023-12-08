@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transform-style: preserve-3d;
+}
+body {
+	background-color: black;
+}
+.container {
+	position: relative;
+	width: 100vw;
+	height: 100dvh;
+	overflow: hidden;
+}
+.poem {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100dvh;
+	font-size: 10vmin;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1em;
+	font-family: sans-serif;
+	z-index: 9;
+	animation: move 10000s linear;
+	mix-blend-mode: difference;
+}
+.poem p {
+	color: white;
+	mix-blend-mode: difference;
+}
+.boxes {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100dvh;
+	overflow: hidden;
+}
+.box {
+	transition: 10s cubic-bezier(0.83, 0, 0.17, 1);
+	position: absolute;
+	background-color: white;
+	mix-blend-mode: difference;
+}
